@@ -2,6 +2,7 @@ import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import Components from 'unplugin-vue-components/vite'
 import { PrimeVueResolver } from '@primevue/auto-import-resolver'
+import tailwindcss from "@tailwindcss/vite"
 
 // @ts-expect-error process is a nodejs global
 const host = process.env.TAURI_DEV_HOST
@@ -14,7 +15,8 @@ export default defineConfig(async () => ({
       resolvers: [
         PrimeVueResolver()
       ]
-    })
+    }),
+    tailwindcss()
   ],
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`
