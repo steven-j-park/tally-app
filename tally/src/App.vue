@@ -5,11 +5,8 @@ import SideNav from './components/shared/SideNav.vue'
 <template>
   <div class="flex h-screen">
     <SideNav />
-    <main class="flex-1 overflow-auto">
-      <div class="p-6">
-        <h2 class="text-2xl font-bold mb-4">Welcome to Tally</h2>
-        <p>Select an option from the menu to get started.</p>
-      </div>
+    <main class="flex-1 overflow-auto p-6">
+      <RouterView />
     </main>
   </div>
 </template>

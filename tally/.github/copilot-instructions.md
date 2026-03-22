@@ -6,7 +6,7 @@ Backend - Rust<br>
 
 ## Conventions
 **All UI related files are located in the src directory**<br>
-New Vue components should be saved in src/components unless otherwise specified<br>
+New Vue components should be saved in src/components/pages unless otherwise specified<br>
 Vue components should be Pascalcase<br>
 Auto-import for PrimeVue components is enabled, so explicit import of PrimeVue components is unnecessary<br>
 Models and contract classes should be saved in src/models<br>
