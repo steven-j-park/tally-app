@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Sidenav from './components/shared/Sidenav.vue'
+import SideNav from './components/shared/SideNav.vue'
 </script>
 
 <template>
   <div class="flex h-screen">
-    <Sidenav />
+    <SideNav />
     <main class="flex-1 overflow-auto">
       <div class="p-6">
         <h2 class="text-2xl font-bold mb-4">Welcome to Tally</h2>
