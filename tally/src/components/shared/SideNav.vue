@@ -9,7 +9,18 @@ interface MenuItem {
   separator?: boolean
 }
 
+const currentYear = new Date().getFullYear()
+const availableYears = ref<number[]>(
+  Array.from({ length: 10 }, (_, i) => currentYear - i)
+)
+const selectedYear = ref(currentYear)
+
 const menuItems = ref<MenuItem[]>([
+  {
+    label: 'Home',
+    icon: 'pi pi-fw pi-home',
+    to: '/'
+  },
   {
     label: 'Client List',
     icon: 'pi pi-fw pi-users',
@@ -32,10 +43,18 @@ const menuItems = ref<MenuItem[]>([
 </script>
 
 <template>
-  <div class="flex flex-col h-screen bg-surface-ground border-r border-surface-border">
+  <div class="flex flex-col h-screen w-64 bg-surface-ground border-r border-surface-border">
     <!-- App Name Header -->
     <div class="p-4 border-b border-surface-border">
-      <h1 class="text-xl font-bold text-surface-900">Tally</h1>
+      <div class="flex items-center justify-between gap-3">
+        <h1 class="text-xl font-bold text-surface-900">Tally</h1>
+        <Dropdown
+          v-model="selectedYear"
+          :options="availableYears"
+          class="flex-1 max-w-1/2"
+          input-class="text-xs"
+        />
+      </div>
     </div>
 
     <!-- Menu -->

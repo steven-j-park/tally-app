@@ -1,3 +1,14 @@
+## Application Description
+Tally is a document inventory management system for the purposes of preparing US Federal Tax Returns.
+** Primary Functions
+  ** Review Client List
+  ** Review Dashboards/Charts to see, at-a-glance, the processing status of the year's clients and trends in revenue and client growth
+  ** Allow individual preparers to 'check-out' a client to indicate that they are currently working on that client's return
+  ** Add or remove client documents, separated by document type (i.e. W2, 1099-INT, 1099-R, etc.)
+  ** Add quarterly tax vpayments for some clients
+** Limitations and Scope
+  ** This application is currently limited to be a document inventory and client workflow system only. It does not provide a document store for those documents and cannot store sensitive PII, PHI, or otherwise sensitive data
+
 ## Technology Stack
 **Tauri**<br>
 UI - Vue (Composition API) w/ Typescript & TailwindCSS<br>

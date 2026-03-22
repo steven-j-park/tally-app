@@ -14,6 +14,7 @@ declare module 'vue' {
     ClientList: typeof import('./src/components/pages/ClientList.vue')['default']
     Configuration: typeof import('./src/components/pages/Configuration.vue')['default']
     Dashboards: typeof import('./src/components/pages/Dashboards.vue')['default']
+    Dropdown: typeof import('primevue/dropdown')['default']
     Home: typeof import('./src/components/pages/Home.vue')['default']
     Menu: typeof import('primevue/menu')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
